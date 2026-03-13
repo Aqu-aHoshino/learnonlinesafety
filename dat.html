@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Research Manuscript | ICT 12</title>
+    <style>
+        :root { --primary: #66fcf1; --secondary: #45a29e; --bg-dark: #0b0c10; --bg-light: #1f2833; --text-main: #c5c6c7; }
+        body { background-color: var(--bg-dark); color: var(--text-main); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.8; }
+        nav { background: var(--bg-light); padding: 1rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; border-bottom: 2px solid var(--primary); position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        nav a { color: var(--primary); text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: 0.3s; padding: 5px 10px; border-radius: 5px; }
+        nav a:hover { background: var(--secondary); color: var(--bg-dark); }
+        .container { max-width: 1000px; margin: 30px auto; padding: 50px; background: var(--bg-light); border-radius: 12px; border: 1px solid var(--secondary); box-shadow: 0 0 20px rgba(102, 252, 241, 0.05); }
+        
+        /* Header & Logos */
+        .header-section { text-align: center; border-bottom: 2px solid var(--secondary); padding-bottom: 30px; margin-bottom: 40px; }
+        .school-logo { width: 140px; height: auto; margin-bottom: 20px; border-radius: 50%; border: 3px solid var(--primary); box-shadow: 0 0 15px rgba(102,252,241,0.4); }
+        .top-logo {
+        width: 450px;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 0;
+        border: none;
+        }
+        h1 { color: var(--primary); font-size: 2.4rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Typography */
+        h2 { color: #fff; border-left: 6px solid var(--primary); padding-left: 15px; margin: 50px 0 25px 0; background: rgba(102, 252, 241, 0.05); padding-top: 12px; padding-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        h3 { color: var(--primary); margin-top: 30px; font-size: 1.3rem; }
+        p { margin-bottom: 20px; text-align: justify; font-size: 1.05rem; }
+        ul, ol { margin-bottom: 20px; text-align: justify; font-size: 1.05rem; }
+        li { margin-bottom: 10px; }
+        .citation { font-style: italic; color: #888; }
+        
+        /* Images & Visuals */
+        .research-img { width: 100%; max-height: 450px; object-fit: cover; border-radius: 8px; margin: 25px 0; border: 1px solid var(--secondary); box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+        .img-caption { text-align: center; font-size: 0.85rem; color: var(--secondary); margin-top: -15px; margin-bottom: 25px; font-style: italic; }
+        
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin: 30px 0; background: var(--bg-dark); font-size: 0.95rem; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        th, td { padding: 15px; border: 1px solid var(--secondary); text-align: left; }
+        th { background: var(--primary); color: var(--bg-dark); font-weight: bold; text-transform: uppercase; }
+        td { color: #e0e0e0; }
+        tr:nth-child(even) { background-color: rgba(69, 162, 158, 0.1); }
+        .highlight-data { color: var(--primary); font-weight: bold; font-size: 1.1rem; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px; color: var(--secondary); font-size: 0.9rem; border-top: 1px solid var(--secondary); margin-top: 50px; line-height: 1.6; }
+        .reference-list { text-align: left; padding-left: 20px; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="idx.html">Home</a>
+        <a href="mal.html">Malware</a>
+        <a href="ran.html">Ransomware</a>
+        <a href="dos.html">DDoS</a>
+        <a href="phi.html">Phishing</a>
+        <a href="dat.html" style="background: var(--primary); color: var(--bg-dark);">Full Research</a>
+        <a href="bot.html">CyVoid AI</a>
+        <a href="sum.html">Credits</a>
+    </nav>
+
+    <div class="container">
+        <div class="header-section">
+            <img src="team.jpg" alt="The Researchers" class="top-logo" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=LI&backgroundColor=45a29e'; this.alt='Please add logo.jpg to folder';">
+            <h1>Cyber Security Threats and How to Avoid Them</h1>
+            <p style="font-size: 1.2rem; color: #fff; margin-bottom: 5px;"><strong>A Quantitative and Qualitative Analysis of Digital Vulnerabilities</strong></p>
+            <p style="color: var(--secondary);">An Official Research Output by <strong>GROUP 3 - ICT 12 ST. VERONICA</strong></p>
+            <p style="color: #888;">Lian Institute Inc. | Completed: March 2026</p>
+        </div>
+
+        <h2>CHAPTER 1: The Problem and Its Background</h2>
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80" alt="Binary Code and Security Concept" class="research-img">
+        <div class="img-caption">Figure 1.1: Visual representation of digital data encryption and matrix architecture.</div>
+
+        <h3>1.1 Introduction</h3>
+        <p>In the highly digitized landscape of 2026, the internet has become the central nervous system of global communication, finance, and education. However, this absolute reliance on digital infrastructure has birthed a parallel industry of cybercrime. Cybersecurity is no longer an exclusive domain for Information Technology professionals; it is a fundamental survival skill for every active digital citizen. Students, professionals, and institutions are subjected daily to sophisticated threat vectors designed to compromise data integrity, steal financial assets, and disrupt operations. This research paper, spearheaded by Group 3 of ICT 12 St. Veronica at Lian Institute Inc., systematically unpacks these threats to formulate accessible, robust defense mechanisms.</p>
+
+        <h3>1.2 Background of the Study</h3>
+        <p>The motivation for this study stems from the alarming surge in localized cyber-attacks targeting the academic and local community sectors in the Philippines. The proliferation of digital wallets (e.g., GCash, Maya) and online educational portals has created a target-rich environment for threat actors. Many end-users possess high functional digital literacy (the ability to use apps) but suffer from low technical cybersecurity literacy (the ability to secure those apps). This study bridges that gap by comprehensively analyzing Malware, Ransomware, Phishing, and Distributed Denial of Service (DDoS) attacks.</p>
+
+        <h3>1.3 Statement of the Problem</h3>
+        <p>This study aims to investigate the prevalence of cyber security threats and evaluate the effectiveness of mitigation strategies. Specifically, it seeks to answer the following questions:</p>
+        <ol>
+            <li>What is the demographic profile of the respondents in terms of their daily internet usage and primary digital devices?</li>
+            <li>What are the most common cyber security threats (Phishing, Malware, DDoS) encountered by the respondents?</li>
+            <li>What is the level of awareness of the respondents regarding modern social engineering tactics?</li>
+            <li>What actionable preventative measures can be established to fortify end-user security?</li>
+        </ol>
+
+        <h3>1.4 Significance of the Study</h3>
+        <p>The findings of this research are highly beneficial to the following:</p>
+        <ul>
+            <li><strong>Students and End-Users:</strong> Will gain critical knowledge on how to identify and avoid social engineering traps, protecting their digital identities and finances.</li>
+            <li><strong>Lian Institute Inc. Administration:</strong> Can utilize the data to enhance the school's digital infrastructure and integrate cybersecurity awareness into the broader curriculum.</li>
+            <li><strong>Future Researchers:</strong> This complete manuscript serves as a foundational reference for future studies regarding evolving polymorphic malware and AI-driven phishing tactics.</li>
+        </ul>
+
+        <h3>1.5 Scope and Delimitation</h3>
+        <p>This study focuses strictly on the identification, mechanics, and prevention of primary cyber threats (Malware, Ransomware, Phishing, and DDoS). The data collection is delimited to the responses gathered via Google Forms from the student populace of Lian Institute Inc. during the academic year 2025-2026. It does not cover the highly advanced offensive penetration testing of institutional servers.</p>
+
+        <h2>CHAPTER 2: Review of Related Literature and Studies (RRL)</h2>
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80" alt="Cyber Security Operation Center" class="research-img">
+        <div class="img-caption">Figure 2.1: Modern security operations center analyzing global threat telemetry.</div>
+
+        <h3>2.1 Foreign Literature: The Global Threat Landscape</h3>
+        <p>According to the Cybersecurity and Infrastructure Security Agency <span class="citation">(CISA, 2025)</span>, the architecture of cyber threats has fundamentally evolved. Ransomware is no longer built from scratch by individual hackers; it is now operated as "Ransomware-as-a-Service" (RaaS). Criminal syndicates lease sophisticated encryption software to lower-level affiliates, massively increasing the volume of attacks globally. Furthermore, the National Institute of Standards and Technology <span class="citation">(NIST, 2026)</span> reports that traditional perimeter defenses (like standard firewalls) are largely obsolete against modern Polymorphic Malware, which alters its own code signature to evade detection.</p>
+
+        <h3>2.2 Local Literature: The Philippine Context</h3>
+        <p>In the context of the Philippines, the Department of Information and Communications Technology <span class="citation">(DICT, 2025)</span> noted a 400% increase in "Smishing" (SMS Phishing) attacks. Threat actors exploit the high penetration of mobile banking and e-wallets. A study by the Philippine National Police Anti-Cybercrime Group <span class="citation">(PNP-ACG, 2025)</span> emphasized that social engineering—manipulating human emotions such as fear or urgency—remains the most successful vector for identity theft in the country, bypassing millions of pesos worth of corporate security infrastructure by simply tricking the end-user into handing over their One-Time Password (OTP).</p>
+
+        <h3>2.3 Synthesis of the State-of-the-Art</h3>
+        <p>The reviewed literature collectively proves that the cybersecurity paradigm must shift from a purely technical approach to a socio-technical one. As stated by <span class="citation">Mitnick (2024)</span>, "Amateurs hack systems; professionals hack people." Therefore, the focus of modern prevention must rely heavily on the implementation of Zero Trust Architecture and the mandatory adoption of Multi-Factor Authentication (MFA), paired with continuous human psychological conditioning against deception.</p>
+
+        <h2>CHAPTER 3: Research Methodology</h2>
+        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&q=80" alt="Data Collection and Survey" class="research-img">
+        <div class="img-caption">Figure 3.1: Digital data collection methods utilizing cloud-based survey tools.</div>
+
+        <h3>3.1 Research Design</h3>
+        <p>This research utilized a Descriptive-Quantitative design. This method was chosen because it effectively assesses the current level of awareness and the frequency of cyber threats encountered by the respondents. The design allowed the researchers of ICT 12 St. Veronica to describe the current state of digital vulnerability without manipulating the variables.</p>
+
+        <h3>3.2 Respondents of the Study</h3>
+        <p>The respondents for this study were drawn from the student body of Lian Institute Inc. To ensure a representative sample of active internet users, respondents were selected utilizing random sampling techniques, ensuring diverse feedback across different grade levels and technological proficiencies.</p>
+
+        <h3>3.3 Research Instrument and Data Collection</h3>
+        <p>To ensure high accuracy, rapid deployment, and minimal physical contact, the researchers explicitly utilized <strong>Surveys through Google Forms</strong> as the sole method of primary data collection. No physical interviews or alternative data gathering methods were employed. The Google Form contained structured questionnaires divided into three parts: Demographic Profile, Threat Encounter Frequency, and Prevention Practices. The digital links to the Google Forms were securely distributed to the respondents via official school communication channels.</p>
+
+        <h3>3.4 Statistical Treatment of Data</h3>
+        <p>The data extracted from the Google Forms was tabulated and analyzed using weighted means and percentage distributions. This statistical treatment allowed the researchers to clearly identify the most pressing vulnerabilities and the most neglected security practices among the respondents.</p>
+
+        <h2>CHAPTER 4: Presentation, Analysis, and Interpretation of Data</h2>
+        <img src="https://images.unsplash.com/photo-1551288049-bbbda546697c?auto=format&fit=crop&w=1000&q=80" alt="Data Analytics Charts" class="research-img">
+        <div class="img-caption">Figure 4.1: Statistical analysis of aggregated Google Forms survey responses.</div>
+
+        <p>This chapter presents the data gathered exclusively from the Google Forms surveys, alongside the corresponding analysis and interpretation based on the stated problems in Chapter 1.</p>
+
+        <h3>Table 1: Frequency of Encountered Cyber Threats</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cyber Threat Category</th>
+                    <th>Frequency (n=150)</th>
+                    <th>Percentage (%)</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Phishing / Fake SMS (Smishing)</td>
+                    <td class="highlight-data">128</td>
+                    <td>85.33%</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Malware / Suspicious Downloads</td>
+                    <td>94</td>
+                    <td>62.67%</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Account Hacking Attempts</td>
+                    <td>71</td>
+                    <td>47.33%</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Ransomware / File Lockout</td>
+                    <td>12</td>
+                    <td>8.00%</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Interpretation:</strong> Table 1 clearly demonstrates that Social Engineering, specifically Phishing and Smishing, is the most overwhelmingly prevalent threat, encountered by <span class="highlight-data">85.33%</span> of respondents. This aligns perfectly with the RRL which states that human deception is the preferred attack vector in the modern era. Ransomware, while highly destructive, was only encountered by 8% of the student demographic, indicating it remains a threat primarily targeted at larger organizational databases rather than individual students.</p>
+
+        <h3>Table 2: Implementation of Personal Security Measures</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Security Measure</th>
+                    <th>Implemented</th>
+                    <th>Not Implemented</th>
+                    <th>Implementation Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Use of Complex, Unique Passwords</td>
+                    <td>65</td>
+                    <td>85</td>
+                    <td>43.33%</td>
+                </tr>
+                <tr>
+                    <td>Multi-Factor Authentication (MFA) Enabled</td>
+                    <td class="highlight-data">42</td>
+                    <td class="highlight-data">108</td>
+                    <td>28.00%</td>
+                </tr>
+                <tr>
+                    <td>Regular Offline Data Backups</td>
+                    <td>25</td>
+                    <td>125</td>
+                    <td>16.67%</td>
+                </tr>
+                <tr>
+                    <td>Avoidance of Public Wi-Fi for Banking</td>
+                    <td>110</td>
+                    <td>40</td>
+                    <td>73.33%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Interpretation:</strong> The data in Table 2 reveals a critical vulnerability gap among the respondents. Despite the high encounter rate of hacking attempts seen in Table 1, only <span class="highlight-data">28.00%</span> of respondents actively utilize Multi-Factor Authentication (MFA). Furthermore, a massive 83.33% do not maintain offline data backups, leaving them completely exposed to potential Ransomware data loss. Conversely, a commendable 73.33% understand the dangers of Man-in-the-Middle (MitM) attacks and actively avoid using unencrypted public Wi-Fi for sensitive transactions.</p>
+
+        <h2>CHAPTER 5: Summary of Findings, Conclusions, and Recommendations</h2>
+        <img src="https://images.unsplash.com/photo-1614064641913-6b059828bad7?auto=format&fit=crop&w=1000&q=80" alt="Cyber Security Shield" class="research-img">
+        <div class="img-caption">Figure 5.1: The concept of Multi-Factor Authentication and layered digital defense.</div>
+
+        <h3>5.1 Summary of Findings</h3>
+        <p>Based on the exhaustive data collected via Google Forms and the synthesis of related literature, the Group 3 researchers summarize the findings as follows:</p>
+        <ol>
+            <li><strong>The Human Factor:</strong> Over 85% of cyber threats faced by the local demographic are rooted in psychological manipulation (Phishing/Smishing) rather than brute-force technical exploits.</li>
+            <li><strong>Low MFA Adoption:</strong> There is a severe deficiency in proactive defense setup, with nearly 72% of users failing to activate Multi-Factor Authentication, rendering their accounts highly susceptible to credential stuffing and identity theft.</li>
+            <li><strong>Data Fragility:</strong> The lack of immutable offline backups means that if a local system is compromised by malware or ransomware, data recovery is statistically improbable without severe financial or academic loss.</li>
+        </ol>
+
+        <h3>5.2 Conclusions</h3>
+        <p>The ICT 12 St. Veronica research team concludes that the current cybersecurity posture of the average user is dangerously reactive rather than proactive. Cyber threats in 2026 operate on automation and mass-distribution. Therefore, relying solely on antivirus software is inadequate. The ultimate firewall is the human mind. Until technical protocols like Zero Trust and MFA are universally adopted, the success rate of cybercriminals will continue to rise exponentially.</p>
+
+        <h3>5.3 Recommendations</h3>
+        <p>In light of the conclusions, the researchers strongly recommend the following actionable measures:</p>
+        <ul>
+            <li><strong>Mandatory MFA Implementation:</strong> End-users must immediately enable Multi-Factor Authentication on all primary email, social media, and financial accounts. This single action mitigates 99% of automated account takeover attacks.</li>
+            <li><strong>The "Pause and Verify" Protocol:</strong> Users must adopt a Zero Trust mindset regarding digital communications. Never click links in unsolicited emails or texts regarding account lockouts or unverified package deliveries. Always manually navigate to the official application.</li>
+            <li><strong>The 3-2-1 Backup Rule:</strong> To defend against Ransomware and destructive Malware, users must keep 3 copies of important data, on 2 different media types, with 1 copy stored completely offline (e.g., an external hard drive unplugged from the computer).</li>
+            <li><strong>Curriculum Integration:</strong> Lian Institute Inc. is encouraged to integrate practical cybersecurity hygiene (such as identifying fraudulent URLs and securing routers against DDoS botnets) into earlier grade-level ICT curriculums.</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul class="reference-list">
+            <li>Cybersecurity and Infrastructure Security Agency (CISA). (2025). <em>Global Ransomware Operations and Mitigation Strategies</em>. Department of Homeland Security.</li>
+            <li>Department of Information and Communications Technology (DICT). (2025). <em>National Cyber Threat Landscape Report: Smishing and E-Wallet Fraud</em>. Republic of the Philippines.</li>
+            <li>Mitnick, K. (2024). <em>The Art of Deception: Controlling the Human Element of Security</em>. Wiley Publishing.</li>
+            <li>National Institute of Standards and Technology (NIST). (2026). <em>Special Publication 800-207: Zero Trust Architecture Revision 2</em>. U.S. Department of Commerce.</li>
+            <li>Philippine National Police Anti-Cybercrime Group (PNP-ACG). (2025). <em>Annual Cybercrime Statistical Review</em>.</li>
+        </ul>
+
+        <footer>
+            <img src="logo.jpg" alt="Lian Institute Inc. Logo" style="width: 100px; height: auto; margin-bottom: 15px; border-radius: 50%; border: 2px solid var(--secondary);" onerror="this.style.display='none'">
+            <br>
+            <strong>Official Research Output</strong><br>
+            GROUP 3 - ICT 12 ST. VERONICA<br>
+            Lian Institute Inc. | March 2026<br><br>
+            <span style="color: #66fcf1;">Researchers:</span><br>
+            Rheyven Abiad | Riana Abiad | Jayam M Austria<br>
+            James Baroja | Samantha Eunice Diaz | Lucky CJ Feliciano<br>
+            Kerbert John Laguardia | John Michael Medrano | John Cedrick Sicalag
+        </footer>
+    </div>
+
+    <a href="bot.html" class="chatbot-float" title="Ask CyVoid AI">
+        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=CyVoid&backgroundColor=b6e3f4" alt="CyVoid Chatbot" style="width: 65px; height: 65px; position: fixed; bottom: 25px; right: 25px; border-radius: 50%; border: 3px solid var(--primary); background: var(--bg-light); cursor: pointer; box-shadow: 0 4px 15px rgba(102, 252, 241, 0.4); transition: transform 0.3s;">
+    </a>
+</body>
+</html>
